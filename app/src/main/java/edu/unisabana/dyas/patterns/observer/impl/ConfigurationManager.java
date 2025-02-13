@@ -29,10 +29,6 @@ public class ConfigurationManager extends AbstractObservable {
     }
 
     public void setDefaultDateFormat(SimpleDateFormat defaultDateFormat) {
-//        System.out.println("Date Format change > " + 
-//                (this.defaultDateFormat!=null 
-//                        ?this.defaultDateFormat.toPattern():"Null") + " to " 
-//                + defaultDateFormat.toPattern());
         this.defaultDateFormat = defaultDateFormat;
         notifyAllObservers("defaultDateFormat", this);
     }
@@ -42,7 +38,6 @@ public class ConfigurationManager extends AbstractObservable {
     }
 
     public void setMoneyFormat(NumberFormat moneyFormat) {
-//        System.out.println("Date Format change > ");
         this.moneyFormat = moneyFormat;
         notifyAllObservers("moneyFormat", this);
     }
